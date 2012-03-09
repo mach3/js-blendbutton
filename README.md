@@ -1,5 +1,5 @@
 BlendButton.js
---------------
+==============
 
 jQuery plugin to add blend effect for buttons.
 

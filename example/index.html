@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>BlendButton DEMO</title>
+	<style type="text/css">
+		body {
+			background-color:#eee;
+		}
+		h1 {
+
+		}
+
+		.col {
+			float:left;
+			margin-right:10px;
+		}
+		.my-button {
+			display:block;
+			width:64px;
+			height:64px;
+			background:url(button.png) 0 0 no-repeat transparent;
+			white-space:nowrap;
+			text-indent:100%;
+			overflow:hidden;
+		}
+		.my-button.active {
+			background:url(button-hover.png);
+		}
+	</style>
+</head>
+<body>
+
+	<h1>BlendButton DEMO</h1>
+
+	<a href="#" class="col my-button">My Button</a>
+	<a href="#" class="col my-button">My Button</a>
+	<a href="#" class="col my-button">My Button</a>
+	<a href="#" class="col my-button">My Button</a>
+	<a href="#" class="col my-button">My Button</a>
+	<a href="#" class="col my-button">My Button</a>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../blendbutton.js"></script>
+	<script type="text/javascript">
+	(function($, undefined){
+		$(".my-button").blendButton();
+	}(jQuery));
+	</script>
+	
+</body>
+</html>
